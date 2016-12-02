@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.pug.pug.main_pro_page.MyStuff"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/accent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_backspace_24dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/backbut" 
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Services"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/indi_title"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/terms"/>
+
+</LinearLayout>

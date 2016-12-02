@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.pug.pug.local_feed.Yammers"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:id="@+id/yammer_fragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/refresher"
+                android:drawingCacheQuality="auto">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recycler"
+                    />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:id="@+id/floatingButton"
+                android:src="@drawable/pen"
+                drawer:backgroundTint="@color/accent"
+                android:scaleType="center"
+                drawer:elevation="7dp"
+                android:elevation="7dp"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:id="@+id/yam_progr"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/sadbug"/>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+
+
+</FrameLayout>

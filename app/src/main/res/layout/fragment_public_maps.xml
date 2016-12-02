@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.pug.pug.public_map_view.PublicMaps"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_id">
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="30dp"
+        android:id="@+id/recharge"
+        android:src="@drawable/ic_autorenew_24dp"
+        drawer:backgroundTint="@color/cardview_light_background"
+        android:scaleType="center"
+        drawer:elevation="7dp"
+        android:elevation="7dp"
+        android:layout_gravity="bottom|right"/>
+</FrameLayout>
+
+
+
+

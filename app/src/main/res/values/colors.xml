@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="accent">#FFBB00</color>
+    <color name="overall">#616161</color>
+    <color name="darkGrey">#a8a8a8</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="transparent">#00000000</color>
+    <color name="mainTextBrightBlue">#02ccff</color>
+    <color name="maintextDarker">#02a6ff</color>
+    <color name="dirtyWhite">#d2d3d1</color>
+    <color name="black">#000000</color>
+    <color name="red">#fc0505</color>
+    <color name="orange_dark">#fcb000</color>
+    <color name="light">#f4f4f4</color>
+    <color name="green">#0ffc66</color>
+</resources>

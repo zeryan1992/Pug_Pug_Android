@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    android:backgroundTint="@color/accent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sadbug"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pug Pug"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="80dp"
+        android:textSize="40sp"
+        android:typeface="monospace"
+        android:textColor="@color/cardview_light_background"/>
+
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.pug.pug.CamRes"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+        android:background="@color/black"
+        android:scaleType="centerCrop"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:padding="20dp"
+        android:hint="Add a text"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/img_text"/>
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:id="@+id/upload"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/ic_cloud_upload_24dp"
+        android:layout_marginBottom="60dp"
+        android:alpha="0.5"
+        />
+
+
+</FrameLayout>

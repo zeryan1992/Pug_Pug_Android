@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.pug.pug.main_pro_page.MyStuff"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="0dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile:-"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/accent"
+        android:layout_gravity="bottom"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_stuff_recycler">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+

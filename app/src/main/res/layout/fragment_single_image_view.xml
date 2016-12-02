@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.pug.pug.SingleImageView"
+    android:background="@color/black"
+    android:clickable="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_backspace_24dp"
+        android:id="@+id/backbut"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/indi_main_text"
+                android:textSize="16sp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="gfdfgdfgdgdfgdfgdg"
+                android:layout_weight="0.98"
+                android:textColor="@color/cardview_light_background"
+                android:alpha="1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/indi_votes_container"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="New Button"
+                    android:id="@+id/indi_up"
+                    android:src="@drawable/gray_up_vote_new"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:text="0"
+                    android:id="@+id/indi_likes"
+                    android:layout_gravity="center"
+                    android:textColor="@color/mainTextBrightBlue"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="New Button"
+                    android:id="@+id/indi_down"
+                    android:src="@drawable/gray_down_vote_new"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

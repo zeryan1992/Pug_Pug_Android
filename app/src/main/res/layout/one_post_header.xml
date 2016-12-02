@@ -1,0 +1,109 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="horizontal"
+            android:background="#f4f4f4"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/indi_main_text"
+                android:textSize="16sp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text=""
+                android:layout_weight="0.98" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/indi_votes_container"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="New Button"
+                    android:id="@+id/indi_up"
+                    android:src="@drawable/gray_up_vote_new"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:text="0"
+                    android:id="@+id/indi_likes"
+                    android:layout_gravity="center"
+                    android:textColor="@color/mainTextBrightBlue"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="New Button"
+                    android:id="@+id/indi_down"
+                    android:src="@drawable/gray_down_vote_new"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:id="@+id/indi_img"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/mainTextBrightBlue"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:id="@+id/date_header"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/count_local"
+                android:textColor="@color/dirtyWhite"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" replies"
+                android:textColor="@color/dirtyWhite"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/overall"/>
+</LinearLayout>

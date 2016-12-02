@@ -1,0 +1,13 @@
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noPosts_card">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No body has posted something funny just Yet, usually when a post reaches above 5 votes and if they agreed to share it with the world, it will be shown here. Try refreshing."
+            android:padding="20dp"
+            android:textColor="@color/mainTextBrightBlue"/>
+</android.support.v7.widget.CardView>
+
